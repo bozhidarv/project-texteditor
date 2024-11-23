@@ -6,11 +6,8 @@ const FONT_SIZE: f32 = 20.0;
 const MIN_WIDTH: i32 = 800;
 const MIN_HEIGHT: i32 = 600;
 
-//#2E3440
 const BG_COLOR: Color = Color::new(46, 52, 64, 1);
-
-//#ECEFF4
-const FG_COLOR: Color = Color::new(236, 239, 244, 1);
+const FG_COLOR: Color = Color::WHITE;
 
 fn main() {
     let (mut rl, thread) = raylib::init()
@@ -76,7 +73,7 @@ fn main() {
             Vector2::new(12.0, 12.0),
             FONT_SIZE,
             1.0,
-            Color::WHITE,
+            FG_COLOR,
         );
     }
 }
